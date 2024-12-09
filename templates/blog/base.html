@@ -3,11 +3,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %} {% endblock %}</title>
+    <link href="{% static 'css/blog.css %} " rel="stylesheet">
 
 </head>
 <body>
-
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
+<div id="sidebar">
+    <h2>IT yangiliklari</h2>
+    <p>Information texnologiyalarga oid yangiliklar</p>
+</div>
 
 </body>
 </html>
