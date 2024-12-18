@@ -28,7 +28,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    object = models.Manager()
+    objects = models.Manager()
     published = PublishedManager()
 
 

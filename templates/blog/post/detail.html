@@ -1,5 +1,5 @@
 {% extends "blog/base.html" %}
-{% block title %} {{ post_title }} {% endblock %}
+{% block title %}{{ post_title }}{% endblock %}
 
 {% block content %}
 
@@ -7,5 +7,5 @@
     <p class="date">
         Published {{ post.publish }} by {{ post.author }}
     </p>
-   {{ post.body|linebreaks }}|
+    {{ post.body|linebreaks }}
 {% endblock %}

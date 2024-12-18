@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %} {% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     <link href="{% static 'css/blog.css' %} " rel="stylesheet">
 
 </head>
 <body>
-<div>
+<div id="content">
     {% block content %}
     {% endblock %}
 </div>
